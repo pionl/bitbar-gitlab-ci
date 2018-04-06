@@ -7,6 +7,8 @@
 # <bitbar.author>Martin Kluska</bitbar.author>
 # <bitbar.author.github>pionl</bitbar.author.github>
 # <bitbar.dependencies>python</bitbar.dependencies>
+# <bitbar.image>https://raw.githubusercontent.com/pionl/bitbar-gitlab-ci/master/gitlab_ci.png</bitbar.image>
+# <bitbar.abouturl>https://github.com/pionl/bitbar-gitlab-ci</bitbar.abouturl>
 #
 
 import json
@@ -18,9 +20,11 @@ except ImportError:
     # Fall back to Python 2's urllib2
     from urllib2 import urlopen
 
-# Define your server and projects (name: id)
+# Your private key for accessing gitlab: User -> Settings -> Access tokens -> add personal access token with api scope
 PRIVATE_TOKEN = 'token'
+# Gitlab URL
 URL = 'https://gitlab.example.com'
+# Define your server and projects (name: id)
 # To get id go to project -> Settings -> General -> General project settings
 PROJECTS ={"React": 3}
 
@@ -35,7 +39,7 @@ def stateIcon(status):
         "failed": "❗",
         "success": "✔️",
         "skipped": "🚀",
-        "manual": "🚀"
+        "manual": "💤"
     }[status]
 
 # Calls gitlab API endpoint with private_token
