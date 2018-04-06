@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # <bitbar.title>Gitlab CI</bitbar.title>
-# <bitbar.desc>Shows currently running pipelines from your GitLab in your bar.</bitbar.desc>
+# <bitbar.desc>Shows currently running pipelines from your GitLab in your bar. Interested in more advanced GitLab bar integration? Let me know (martin@kluska.cz). This implementation is just quick solution.</bitbar.desc>
 # <bitbar.version>v0.21</bitbar.version>
 # <bitbar.author>Martin Kluska</bitbar.author>
 # <bitbar.author.github>pionl</bitbar.author.github>

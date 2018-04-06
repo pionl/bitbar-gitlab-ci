@@ -4,6 +4,8 @@ Shows currently running pipelines from your GitLab in your bar.
 
 ![BitBar Example showing BitCoins plugin](./gitlab_ci.png)
 
+**Interested in more advanced GitLab bar integration? Let me know (martin@kluska.cz). This implementation is just quick solution.**
+
 ## Install
 
 Copy the plugin to your BitBar plugins directory. Edit the file and add your GitLab data.
