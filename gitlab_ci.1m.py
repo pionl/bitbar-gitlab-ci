@@ -20,18 +20,19 @@ except ImportError:
     # Fall back to Python 2's urllib2
     from urllib2 import urlopen
 
+
 INSTANCES = [
-	{
+    {
         # Your private key for accessing gitlab: User -> Settings -> Access tokens -> add personal access token with api scope
-		'privateToken': 'token',
+        'privateToken': 'token',
         # Gitlab URL
-    	'url': 'https://gitlab.example.com',
+        'url': 'https://gitlab.example.com',
         # Define your server and projects (name: id)
         # To get id go to project -> Settings -> General -> General project settings
-    	'projects': {
+        'projects': {
             "React": 3,
         },
-	},
+    },
 ]
 
 pipelines = []
